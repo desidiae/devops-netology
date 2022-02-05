@@ -33,14 +33,5 @@ override.tf.json
 # Ignore CLI configuration files
 .terraformrc
 terraform.rc
-<<<<<<< HEAD
-=======
->>>>>>> 3bd5642e5b2e10cbe850d1e348497b8d0cdb69d7
 
 sh-agent -s)”
-=======
-
-
-sh-agent -s)”
-.gitignore
->>>>>>> fix
