@@ -1,4 +1,10 @@
 # devops-netology
+
+https rrl to git clone:
+https://github.com/desidiae/devops-netology.git
+https://gitlab.com/desidiae/devops-netology.git
+https://desidiae@bitbucket.org/desidiae/devops-netology.git
+
 1 stroka
 2 line
 3 line

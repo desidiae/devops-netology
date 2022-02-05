@@ -1,0 +1,71 @@
+[33mcommit df7a174ad26642ea19aafcc4e870978038260ebd[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: sharov.aleksey <sha.ala@yandex.ru>
+Date:   Wed Dec 15 22:22:18 2021 +0200
+
+    ll
+
+[33mcommit 6342c020026cccb23b0663388e71025f041dd78c[m
+Author: sharov.aleksey <sha.ala@yandex.ru>
+Date:   Wed Dec 15 21:26:43 2021 +0200
+
+    test
+
+[33mcommit bd1584683aad0593db855ded920bef2941306161[m
+Author: sharov.aleksey <sha.ala@yandex.ru>
+Date:   Wed Dec 15 21:26:16 2021 +0200
+
+    Moved and deleted
+
+[33mcommit 5281542d8958ac725f8146f0104fa6d749ae33b0[m
+Author: sharov.aleksey <sha.ala@yandex.ru>
+Date:   Wed Dec 15 21:07:54 2021 +0200
+
+    Prepare to delete and move
+
+[33mcommit 6b40b166ab6f1f09c083dcca0372ed2f85115088[m
+Author: sharov.aleksey <sha.ala@yandex.ru>
+Date:   Wed Dec 15 20:58:31 2021 +0200
+
+    Added gitignore
+
+[33mcommit 542059dac0e0d1d404345eba62b327d7874d8987[m
+Author: sharov.aleksey <sha.ala@yandex.ru>
+Date:   Wed Dec 15 20:58:11 2021 +0200
+
+    Added gitignore
+
+[33mcommit a938c1fba551506bc71309847e90dec167e0012d[m
+Author: sharov.aleksey <sha.ala@yandex.ru>
+Date:   Wed Dec 15 20:27:52 2021 +0200
+
+    test
+
+[33mcommit 1545a541ef3b61e70dff7fa7b343afee8de14fd4[m
+Author: sharov.aleksey <sha.ala@yandex.ru>
+Date:   Wed Dec 15 19:43:55 2021 +0200
+
+    3 commit
+
+[33mcommit f95873957dd9a31d9e363e17b68627d56da6b21a[m
+Author: sharov.aleksey <sha.ala@yandex.ru>
+Date:   Wed Dec 15 19:42:57 2021 +0200
+
+    3commit
+
+[33mcommit 551416b90e685997d8a6ed6204f1f70c3bb9f086[m
+Author: sharov.aleksey <sha.ala@yandex.ru>
+Date:   Tue Dec 14 21:24:24 2021 +0200
+
+    2 commit
+
+[33mcommit 78d5c65c22560a30504ff4aaa1d763ee3c5be00e[m
+Author: sharov.aleksey <sha.ala@yandex.ru>
+Date:   Tue Dec 14 21:15:31 2021 +0200
+
+    First commit
+
+[33mcommit 294034af6de9b9db28c30f1e6496d6b4482a7e77[m
+Author: desidiae <95380520+desidiae@users.noreply.github.com>
+Date:   Tue Dec 14 20:18:49 2021 +0200
+
+    Initial commit
