@@ -8,7 +8,7 @@
 
 fefewfewfew
 dasdasdas
-
+fdsfdsf
 
 игнорируются пустые стоки и строки со знаком хэша;
 
