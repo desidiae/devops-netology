@@ -67,12 +67,17 @@ vagrant@vagrant:~/test_touch$ touch {000001..300000}.txt
 
 12.Основываясь на знаниях о просмотре текущих (например, PATH) и установке новых переменных; командах, которые мы рассматривали, добейтесь в выводе type -a bash в виртуальной машине наличия первым пунктом в списке:
 
-vagrant@vagrant:/$ mkdir /tmp/new_path_dir/  
-vagrant@vagrant:/$ cp /bin/bash /tmp/new_path_dir/  
-vagrant@vagrant:/$ type -a bash  
-bash is /tmp/new_path_directory/bash  
-bash is /tmp/new_path_directory/bash  
-bash is /bin/bash  
+vagrant@vagrant:~$ mkdir /tmp/new_path_dir/
+vagrant@vagrant:~$ cp /bin/bash /tmp/new_path_dir/
+vagrant@vagrant:~$ type -a bash
+bash is /usr/bin/bash
+bash is /bin/bash
+
+vagrant@vagrant:~$ PATH=/tmp/new_path_dir/:$PATH
+vagrant@vagrant:~$ type -a bash
+bash is /tmp/new_path_dir/bash
+bash is /tmp/new_path_directory/bash
+bash is /bin/bash
 
 
 13.Чем отличается планирование команд с помощью batch и at?  
