@@ -53,6 +53,24 @@ dasd
 dasd  
 1  
 
+Работа над ошибками:  
+vagrant@vagrant:~$ cat a.txt  
+ase  
+dasda  
+dasd  
+dasd  
+1  
+vagrant@vagrant:~$ cat c_out.txt  
+cat: c_out.txt: No such file or directory  
+vagrant@vagrant:~$ cat < a.txt > c_out.txt  
+vagrant@vagrant:~$ cat c_out.txt  
+ase  
+dasda  
+dasd  
+dasd  
+1  
+
+
 
 6. Получится ли находясь в графическом режиме, вывести данные из PTY в какой-либо из эмуляторов TTY? Сможете ли вы наблюдать выводимые данные?  
 
@@ -120,6 +138,15 @@ Warning: Permanently added 'localhost' (ECDSA) to the list of known hosts.
 vagrant@localhost's password:  
 
 Для варианта с заданием нашел, что при подключении ожидается пользователь, а не другой процесс, и нет локального tty в данный момент. Если добавить -t, команда исполняется c принудительным созданием псевдотерминала  
+           
+Работа над ошибками:             
+vagrant@vagrant:~$ ssh localhost 'tty'  
+vagrant@localhost's password:  
+not a tty  
+vagrant@vagrant:~$ ssh -t localhost 'tty'  
+vagrant@localhost's password:  
+/dev/pts/1  
+Connection to localhost closed.  
 
 
 13. Бывает, что есть необходимость переместить запущенный процесс из одной сессии в другую. Попробуйте сделать это, воспользовавшись reptyr. Например, так можно перенести в screen процесс, который вы запустили по ошибке в обычной SSH-сессии.  
