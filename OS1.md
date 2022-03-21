@@ -24,6 +24,20 @@ openat(AT_FDCWD, "/etc/magic", O_RDONLY) = 3
 
 надо узнать PID процесса который работает с файлом ps aux, далее echo '' >/proc/PID/fd/4
 
+Пояснение по замечанию:  
+Мне надо было выяснить какой дескриптор обнулять, для этого узнаем PID процесса:  
+1.при помощи команды ps, в ее выводе искал интересующий процесс и его PID  
+2.теперь зная пид, через команду: sudo lsof -p PID, надо найти процесс с отметкой deleted  
+3.Смотрим какой в столбце FD номер дескриптора  
+4.обнуляем дескриптор командой выше  
+  
+Нашел , что можно воспользоваться такими командами: sudo lsof +L1, lsof | grep deleted, они выдадут статус deleted  
+  
+Сейчас пример другой, но вывод с дескриптором 1, w write, в прошлый раз дескриптор был 4  
+vagrant@vagrant:~$ sudo lsof +L1  
+COMMAND  PID    USER   FD   TYPE DEVICE SIZE/OFF NLINK    NODE NAME  
+ping    3072 vagrant    1w   REG  253,0    31040     0 2621459 /home/vagrant/ping_log (deleted)  
+  
 
 **4.Занимают ли зомби-процессы какие-то ресурсы в ОС (CPU, RAM, IO)?**
 
@@ -51,6 +65,17 @@ root@vagrant:/usr/sbin# opensnoop-bpfcc
 PID    COMM               FD ERR PATH  
 
 перезагрузил виртуалку, и тоже самое... Не понимаю, что делать.
+
+Пояснение по замечанию:  
+К сожалению ваше предложение не помогает, попробовал разные варианты:  
+vagrant@vagrant:~$ sudo opensnoop-bpfcc  
+PID    COMM               FD ERR PATH  
+^Cvagrant@vagrant:~$ sudo su  
+root@vagrant:/home/vagrant# opensnoop-bpfcc  
+PID    COMM               FD ERR PATH  
+^Croot@vagrant:/home/vagrant# /usr/sbin/opensnoop-bpfcc  
+PID    COMM               FD ERR PATH  
+
 
 
 **6.Какой системный вызов использует uname -a? Приведите цитату из man по этому системному вызову, где описывается альтернативное местоположение в /proc, где можно узнать версию ядра и релиз ОС.**
