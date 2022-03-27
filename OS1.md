@@ -78,29 +78,29 @@ PID    COMM               FD ERR PATH
 
   
   
-Возникла проблема с ДЗ где есть netdaa, не пробрасывались порты. Подумал что у меня криво инициализирован вагрант, снес к чертям все машины, настроил заново. Оказалось, что доступ к образам хашикорп ограничили с ip из РФ. Помучался с прокси, плагин прокси тоже не дают скачать. Поставил бесплатный впн, вагант скачал образ. И opensnoop-bpfcc заработал.
-
-vagrant@vagrant:~$ dpkg -L bpfcc-tools | grep sbin/opensnoop
-/usr/sbin/opensnoop-bpfcc
-vagrant@vagrant:~$ sudo /usr/sbin/opensnoop-bpfcc
-PID    COMM               FD ERR PATH
-626    irqbalance          6   0 /proc/interrupts
-626    irqbalance          6   0 /proc/stat
-626    irqbalance          6   0 /proc/irq/20/smp_affinity
-626    irqbalance          6   0 /proc/irq/0/smp_affinity
-626    irqbalance          6   0 /proc/irq/1/smp_affinity
-626    irqbalance          6   0 /proc/irq/8/smp_affinity
-626    irqbalance          6   0 /proc/irq/12/smp_affinity
-626    irqbalance          6   0 /proc/irq/14/smp_affinity
-626    irqbalance          6   0 /proc/irq/15/smp_affinity
-806    vminfo              6   0 /var/run/utmp
-619    dbus-daemon        -1   2 /usr/local/share/dbus-1/system-services
-619    dbus-daemon        20   0 /usr/share/dbus-1/system-services
-619    dbus-daemon        -1   2 /lib/dbus-1/system-services
-619    dbus-daemon        20   0 /var/lib/snapd/dbus-1/system-services/
-1      systemd            12   0 /proc/630/cgroup
-806    vminfo              6   0 /var/run/utmp
-
+Возникла проблема с ДЗ где есть netdaa, не пробрасывались порты. Подумал что у меня криво инициализирован вагрант, снес к чертям все машины, настроил заново. Оказалось, что доступ к образам хашикорп ограничили с ip из РФ. Помучался с прокси, плагин прокси тоже не дают скачать. Поставил бесплатный впн, вагант скачал образ. И opensnoop-bpfcc заработал.  
+  
+vagrant@vagrant:~$ dpkg -L bpfcc-tools | grep sbin/opensnoop  
+/usr/sbin/opensnoop-bpfcc  
+vagrant@vagrant:~$ sudo /usr/sbin/opensnoop-bpfcc  
+PID    COMM               FD ERR PATH  
+626    irqbalance          6   0 /proc/interrupts  
+626    irqbalance          6   0 /proc/stat  
+626    irqbalance          6   0 /proc/irq/20/smp_affinity  
+626    irqbalance          6   0 /proc/irq/0/smp_affinity  
+626    irqbalance          6   0 /proc/irq/1/smp_affinity  
+626    irqbalance          6   0 /proc/irq/8/smp_affinity  
+626    irqbalance          6   0 /proc/irq/12/smp_affinity  
+626    irqbalance          6   0 /proc/irq/14/smp_affinity  
+626    irqbalance          6   0 /proc/irq/15/smp_affinity  
+806    vminfo              6   0 /var/run/utmp  
+619    dbus-daemon        -1   2 /usr/local/share/dbus-1/system-services  
+619    dbus-daemon        20   0 /usr/share/dbus-1/system-services  
+619    dbus-daemon        -1   2 /lib/dbus-1/system-services  
+619    dbus-daemon        20   0 /var/lib/snapd/dbus-1/system-services/  
+1      systemd            12   0 /proc/630/cgroup  
+806    vminfo              6   0 /var/run/utmp  
+  
 
 
 **6.Какой системный вызов использует uname -a? Приведите цитату из man по этому системному вызову, где описывается альтернативное местоположение в /proc, где можно узнать версию ядра и релиз ОС.**
